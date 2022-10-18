@@ -10,6 +10,7 @@ import com.example.fragmentejercicio2.databinding.FragmentMainBinding
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
+    //lista que contiene los lugares que se muestran en el recycler
     val list = listOf<Place>(Place("https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/1200px-Angkor_Wat.jpg", "Angkor Wat", "13.4125", "103.86666666667"),
         Place("https://cnnespanol.cnn.com/wp-content/uploads/2021/06/Gran-barrera-coral.jpeg?quality=100&strip=info", "Barrera de coral", "-18.2870668", "147.6991918"),
         Place("https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Before_Machu_Picchu.jpg/640px-Before_Machu_Picchu.jpg", "Machu Picchu" , "-13.1631412", " -72.5449629"),
@@ -22,9 +23,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     )
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        //Desacoplamos la vista y guardamos el bind en una variable
         val binding = FragmentMainBinding.bind(view)
 
+        //Asocia el adapter al recycler y le pasa la lista y una funcion por parametro
+        //(que se llamara en el onBindViewHolder cuando se clicke sobre un lugar)
         binding.recycler.adapter = PlaceAdapter(list){place->
 
 
