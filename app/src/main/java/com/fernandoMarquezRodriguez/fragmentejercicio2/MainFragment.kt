@@ -1,12 +1,13 @@
-package com.example.fragmentejercicio2
+package com.fernandoMarquezRodriguez.fragmentejercicio2
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.fragmentejercicio2.R
 import com.example.fragmentejercicio2.databinding.FragmentMainBinding
+
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 

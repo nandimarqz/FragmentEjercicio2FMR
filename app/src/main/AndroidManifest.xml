@@ -13,7 +13,7 @@
         android:theme="@style/Theme.FragmentEjercicio2"
         tools:targetApi="31">
         <activity
-            android:name=".HostActivity"
+            android:name="com.fernandoMarquezRodriguez.fragmentejercicio2.HostActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

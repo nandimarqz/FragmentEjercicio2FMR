@@ -1,11 +1,13 @@
-package com.example.fragmentejercicio2
+package com.fernandoMarquezRodriguez.fragmentejercicio2
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.fragmentejercicio2.R
 import com.example.fragmentejercicio2.databinding.PlaceViewBinding
+
 
 /**
  * Este adapter va a ser el puente entre la vista y los datos que tenga (en este caso la vista: place_layout y los datos de la lista de la MainActivity )
